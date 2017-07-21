@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="Css/uikit/sticky.almost-flat.css" />
     <script src="Js/jquery.min.js"></script>
     <script src="Js/uikit.min.js"></script>
-    <script src="Js/sticky.js"></script>
-    <title>①Mi阳光的小屋</title>
+    <script src="Js/sticky.js"></script>       
     <asp:ContentPlaceHolder ID="headcontent" runat="server">
     </asp:ContentPlaceHolder>
+    <title></title> 
 </head>
 <body>
     <form id="form1" runat="server">
@@ -75,7 +75,6 @@
                 </nav>
             </div>
         </div>
-
         <div id="offcanvas-highcharts" class="uk-offcanvas" aria-hidden="true">
             <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon">
