@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headcontent" runat="server">
     <title>①Mi阳光的小屋</title>
-    <link rel="stylesheet" href="Css/style.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="mainpage" runat="server">
     <div class="uk-height-1-1">

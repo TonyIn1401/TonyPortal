@@ -102,10 +102,12 @@
     <Content Include="Css\uikit\sticky.css" />
     <Content Include="Css\uikit\sticky.min.css" />
     <Content Include="Css\uikit\uikit.almost-flat.css" />
+    <Content Include="HighCharts\HighCharts_LineChart.aspx" />
     <Content Include="Img\chartdemo-leida.png" />
     <Content Include="Img\chartdemo-linechart.png" />
     <Content Include="Img\chartdemo-map.png" />
     <Content Include="Img\chartdemo-relationchart.png" />
+    <Content Include="Js\highcharts\linecharts.js" />
     <Content Include="Js\jquery.min.js" />
     <Content Include="Js\sticky.js" />
     <Content Include="Js\sticky.min.js" />
@@ -132,6 +134,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HighCharts\HighCharts_LineChart.aspx.cs">
+      <DependentUpon>HighCharts_LineChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_LineChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_LineChart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,9 +157,7 @@
       <DependentUpon>Top.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="HighCharts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
