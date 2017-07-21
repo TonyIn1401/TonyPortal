@@ -2021,6 +2021,9 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   list-style: none;
   float: left;
 }
+.uk-navbar-nav:first-child{
+    margin-left:10px;
+}
 /*
  * 1. Create position context for dropdowns
  */

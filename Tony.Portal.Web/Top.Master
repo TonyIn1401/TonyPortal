@@ -7,7 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="Css/uikit/uikit.almost-flat.css" />
-    <link rel="stylesheet" href="Css/index.css" />
     <link rel="stylesheet" href="Css/uikit/sticky.almost-flat.css" />
     <script src="Js/jquery.min.js"></script>
     <script src="Js/uikit.min.js"></script>
@@ -21,8 +20,8 @@
         <div id="header" class="uk-navbar uk-navbar-attached uk-sticky-placeholder"  data-uk-sticky="">
             <div class="uk-container">
                 <nav class="uk-navbar uk-navbar-attached">
-                    <a href="http://www.liaoxuefeng.com/" class="uk-navbar-brand uk-visible-large">①Mi阳光的小屋</a>
-                    <a href="http://www.liaoxuefeng.com/" class="uk-navbar-brand uk-hidden-large"><i class="uk-icon-home"></i></a>
+                    <a href="Index.aspx" class="uk-navbar-brand uk-visible-large">①Mi阳光的小屋</a>
+                    <a href="Index.aspx" class="uk-navbar-brand uk-hidden-large"><i class="uk-icon-home"></i></a>
                     <ul class="uk-navbar-nav uk-grid-medium uk-hidden-small">
                         <li class="uk-parent" data-uk-dropdown="true">
                             <a href="http://www.baidu.com">HighCharts</a>

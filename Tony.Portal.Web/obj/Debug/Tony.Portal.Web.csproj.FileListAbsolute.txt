@@ -63,3 +63,4 @@ C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\bin\Microsoft.Appl
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\obj\Debug\Tony.Portal.Web.dll
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\obj\Debug\Tony.Portal.Web.pdb
+C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\obj\Debug\Tony.Portal.Web.csprojResolveAssemblyReference.cache

@@ -12,7 +12,7 @@
     <script src="Js/jquery.min.js"></script>   
     <script src="Js/uikit.min.js"></script>   
     <title>郑昭祥的官方网站</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder ID="headcontent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
