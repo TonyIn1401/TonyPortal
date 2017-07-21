@@ -97,7 +97,6 @@
     <Content Include="Css\font-awesome.min.css" />
     <Content Include="Css\fonts\fontawesome-webfont.svg" />
     <Content Include="Css\icon.css" />
-    <Content Include="Css\index.css" />
     <Content Include="Css\style.css" />
     <Content Include="Css\uikit\sticky.almost-flat.css" />
     <Content Include="Css\uikit\sticky.almost-flat.min.css" />

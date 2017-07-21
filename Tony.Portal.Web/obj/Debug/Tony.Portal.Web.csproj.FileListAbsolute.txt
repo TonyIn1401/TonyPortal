@@ -61,6 +61,5 @@ C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\bin\Microsoft.AI.W
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\bin\Microsoft.ApplicationInsights.xml
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\obj\Debug\Tony.Portal.Web.csprojResolveAssemblyReference.cache
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\obj\Debug\Tony.Portal.Web.dll
 C:\Users\TZheng03\Documents\GitHub\TonyPortal\Tony.Portal.Web\obj\Debug\Tony.Portal.Web.pdb
