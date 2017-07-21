@@ -1,0 +1,37 @@
+﻿/*
+ * 1. Allow margin
+ * 2. Prevent inherit font style
+ * 4. Correct line-height
+ * 5. Better font rendering
+ * 6. Remove `text-decoration` for anchors
+ */
+[class*='uk-icon-'] {
+  font-family: FontAwesome;
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  font-weight: normal;
+  font-style: normal;
+  /* 4 */
+  line-height: 1;
+  /* 5 */
+  -webkit-font-smoothing: antialiased;
+  /* 6 */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*='uk-icon-'],
+[class*='uk-icon-']:hover,
+[class*='uk-icon-']:focus {
+  text-decoration: none;
+}
+
+.uk-icon-home:before {
+  content: "\f015";
+}
+
+.uk-icon-navicon:before,
+.uk-icon-reorder:before,
+.uk-icon-bars:before {
+  content: "\f0c9";
+}

@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Top.master.cs" Inherits="Tony.Portal.Web.Top" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="Css/uikit/uikit.almost-flat.css" />
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="stylesheet" href="Css/uikit/sticky.almost-flat.css" />
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/uikit.min.js"></script>
+    <script src="Js/sticky.js"></script>
+    <title>①Mi阳光的小屋</title>
+    <asp:ContentPlaceHolder ID="headcontent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header" class="uk-navbar uk-navbar-attached uk-sticky-placeholder"  data-uk-sticky="">
+            <div class="uk-container">
+                <nav class="uk-navbar uk-navbar-attached">
+                    <a href="http://www.liaoxuefeng.com/" class="uk-navbar-brand uk-visible-large">①Mi阳光的小屋</a>
+                    <a href="http://www.liaoxuefeng.com/" class="uk-navbar-brand uk-hidden-large"><i class="uk-icon-home"></i></a>
+                    <ul class="uk-navbar-nav uk-grid-medium uk-hidden-small">
+                        <li class="uk-parent" data-uk-dropdown="true">
+                            <a href="http://www.baidu.com">HighCharts</a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <ul class="uk-nav uk-nav-navbar">
+                                    <li><a href="http://www.baidu.com">线图</a></li>
+                                    <li><a href="http://www.baidu.com">面积图</a></li>
+                                    <li><a href="http://www.baidu.com">柱状图</a></li>
+                                    <li><a href="http://www.baidu.com">饼状图</a></li>
+                                    <li><a href="http://www.baidu.com">散点图及气泡图</a></li>
+                                    <li><a href="http://www.baidu.com">仪表图</a></li>
+                                    <li><a href="http://www.baidu.com">热力图</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-parent" data-uk-dropdown="true">
+                            <a href="http://www.baidu.com">ECharts</a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <ul class="uk-nav uk-nav-navbar">
+                                    <li><a href="http://www.baidu.com">散点图</a></li>
+                                    <li><a href="http://www.baidu.com">折线图</a></li>
+                                    <li><a href="http://www.baidu.com">柱状图</a></li>
+                                    <li><a href="http://www.baidu.com">地图</a></li>
+                                    <li><a href="http://www.baidu.com">饼图</a></li>
+                                    <li><a href="http://www.baidu.com">雷达图</a></li>
+                                    <li><a href="http://www.baidu.com">K线图</a></li>
+                                    <li><a href="http://www.baidu.com">箱线图</a></li>
+                                    <li><a href="http://www.baidu.com">热力图</a></li>
+                                    <li><a href="http://www.baidu.com">关系图</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000">JavaScript教程</a></li>
+                        <li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a></li>
+                        <li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></li>
+                    </ul>
+                    <ul class="uk-navbar-nav uk-visible-small">
+                        <li class="uk-parent" data-uk-dropdown="true">
+                            <a href="http://www.baidu.com"><i class="uk-icon-navicon"></i></a>
+                            <div class="uk-dropdown uk-dropdown-navbar">
+                                <ul class="uk-nav uk-nav-navbar">
+                                    <li data-uk-offcanvas="{target:'#offcanvas-highcharts'}"><a href="http://www.baidu.com">HighCharts</a></li>
+                                    <li data-uk-offcanvas="{target:'#offcanvas-echarts'}"><a href="http://www.baidu.com">Echarts</a></li>
+                                    <li><a href="http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000">JavaScript教程</a></li>
+                                    <li><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a></li>
+                                    <li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="offcanvas-highcharts" class="uk-offcanvas" aria-hidden="true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon">
+                    <li><a href="http://www.baidu.com">线图</a></li>
+                    <li><a href="http://www.baidu.com">面积图</a></li>
+                    <li><a href="http://www.baidu.com">柱状图</a></li>
+                    <li><a href="http://www.baidu.com">饼状图</a></li>
+                    <li><a href="http://www.baidu.com">散点图及气泡图</a></li>
+                    <li><a href="http://www.baidu.com">仪表图</a></li>
+                    <li><a href="http://www.baidu.com">热力图</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="offcanvas-echarts" class="uk-offcanvas" aria-hidden="true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon">
+                    <li><a href="http://www.baidu.com">散点图</a></li>
+                    <li><a href="http://www.baidu.com">折线图</a></li>
+                    <li><a href="http://www.baidu.com">柱状图</a></li>
+                    <li><a href="http://www.baidu.com">地图</a></li>
+                    <li><a href="http://www.baidu.com">饼图</a></li>
+                    <li><a href="http://www.baidu.com">雷达图</a></li>
+                    <li><a href="http://www.baidu.com">K线图</a></li>
+                    <li><a href="http://www.baidu.com">箱线图</a></li>
+                    <li><a href="http://www.baidu.com">热力图</a></li>
+                    <li><a href="http://www.baidu.com">关系图</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="mainpage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

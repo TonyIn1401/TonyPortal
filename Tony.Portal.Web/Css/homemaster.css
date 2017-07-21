@@ -1,0 +1,576 @@
+﻿body {
+}
+
+/*标签*/
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+fieldset,
+figure {
+  margin: 0 0 15px 0;
+}
+* + p,
+* + ul,
+* + ol,
+* + dl,
+* + blockquote,
+* + pre,
+* + address,
+* + fieldset,
+* + figure {
+  margin-top: 15px;
+}
+/* Headings
+ ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #444444;
+  text-transform: none;
+}
+/*
+ * Margins
+ */
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 25px;
+}
+/*
+ * Sizes
+ */
+h1,
+.uk-h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+h2,
+.uk-h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+h3,
+.uk-h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+h4,
+.uk-h4 {
+  font-size: 16px;
+  line-height: 22px;
+}
+h5,
+.uk-h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+h6,
+.uk-h6 {
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Lists
+ ========================================================================== */
+ul,
+ol {
+  padding-left: 30px;
+}
+/*
+ * Reset margin for nested lists
+ */
+ul > li > ul,
+ul > li > ol,
+ol > li > ol,
+ol > li > ul {
+  margin: 0;
+}
+
+/*标签*/
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+#header .uk-navbar {
+  border-width: 0;
+}
+
+/* ========================================================================
+   Component: Navbar
+ ========================================================================== */
+.uk-navbar {
+  background: #0593d3;
+  color: #444444;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+}
+/*
+ * Micro clearfix
+ */
+.uk-navbar:before,
+.uk-navbar:after {
+  content: "";
+  display: table;
+}
+.uk-navbar:after {
+  clear: both;
+}
+
+.uk-container {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 25px;
+}
+
+.uk-navbar-attached {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 0;
+}
+
+.x-container {
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+/*
+ * Imitate navbar items
+ */
+.uk-navbar-content,
+.uk-navbar-brand,
+.uk-navbar-toggle {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 49px;
+  padding: 0 15px;
+  float: left;
+  margin-top: -1px;
+  text-shadow: 0 1px 0 none;
+}
+
+/*
+ * Helper to center all child elements vertically
+ */
+.uk-navbar-content:before,
+.uk-navbar-brand:before,
+.uk-navbar-toggle:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* Sub-objects: `uk-navbar-brand`
+ ========================================================================== */
+.uk-navbar-brand {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+.uk-navbar-brand:hover,
+.uk-navbar-brand:focus {
+  color: #ffffff;
+  text-decoration: none;
+  /* 2 */
+  outline: none;  
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  border-left-color: #0371a1;
+  border-right-color: #0371a1;
+  border-top-color: #0371a1;
+  background-color: #0482ba;
+  color: #fff;
+  transition: background-color 1s, border-color 1s;
+}
+
+/*
+* Apply same `border-radius` as `uk-navbar`
+*/
+.uk-navbar-nav:first-child > li:first-child > a {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/*
+     * Sub-modifier `uk-navbar-flip`
+     */
+/* Collapse border */
+.uk-navbar-flip .uk-navbar-nav > li > a {
+  margin-left: 0;
+  margin-right: -1px;
+}
+
+/* Apply same `border-radius` as `uk-navbar` */
+.uk-navbar-flip .uk-navbar-nav:first-child > li:first-child > a {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.uk-navbar-flip .uk-navbar-nav:last-child > li:last-child > a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*
+     * Sub-modifier `uk-navbar-attached`
+     */
+.uk-navbar-attached {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 0;
+}
+.uk-navbar-attached .uk-navbar-nav > li > a {
+  border-radius: 0 !important;
+}
+
+/* Sub-object: `uk-navbar-nav`
+ ========================================================================== */
+.uk-navbar-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+/*
+ * 1. Create position context for dropdowns
+ */
+.uk-navbar-nav > li {
+  float: left;
+  /* 1 */
+  position: relative;
+}
+/*
+ * 1. Dimensions
+ * 2. Style
+ */
+.uk-navbar-nav > li > a {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* 1 */
+  height: 49px;
+  padding: 0 15px;
+  line-height: 48px;
+  /* 2 */
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-shadow: 0 1px 0 none;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  border-bottom-width: 0;
+  text-shadow: none;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+/* Appear not as link */
+.uk-navbar-nav > li > a[href='#'] {
+  cursor: text;
+}
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Also apply if dropdown is opened
+ * 3. Remove default focus style
+ */
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+  color: #ffffff;
+  /* 3 */
+  outline: none;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  border-left-color: #0371a1;
+  border-right-color: #0371a1;
+  border-top-color: #0371a1;
+  background-color: #0482ba;
+  color: #fff;
+  transition: background-color 1s, border-color 1s;
+}
+/* OnClick */
+.uk-navbar-nav > li > a:active {
+  background-color: #0371a1;
+  color: #ffffff;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+/* Active */
+.uk-navbar-nav > li.uk-active > a {
+  background-color: #0482ba;
+  color: #ffffff;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+/* Sub-objects: `uk-navbar-nav-subtitle`
+ ========================================================================== */
+.uk-navbar-nav .uk-navbar-nav-subtitle {
+  line-height: 36px;
+}
+.uk-navbar-nav-subtitle > div {
+  margin-top: -10px;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+/* Tablets portrait */
+@media (min-width: 768px) and (max-width: 959px) {
+  .uk-visible-small {
+    display: none !important;
+  }
+  .uk-visible-large {
+    display: none !important ;
+  }
+  .uk-hidden-medium {
+    display: none !important;
+  }
+}
+/* Phone landscape and smaller*/
+@media (max-width: 767px) {
+  .uk-visible-medium {
+    display: none !important;
+  }
+  .uk-visible-large {
+    display: none !important;
+  }
+  .uk-hidden-small {
+    display: none !important;
+  }
+}
+
+/*
+ * Visibility
+ * Avoids setting display to `block` so it works also with `inline-block` and `table`
+ */
+/* Desktop and bigger */
+@media (min-width: 960px) {
+  .uk-visible-small {
+    display: none !important;
+  }
+  .uk-visible-medium {
+    display: none !important;
+  }
+  .uk-hidden-large {
+    display: none !important;
+  }
+}
+
+
+
+/* Sub-object: `uk-navbar-flip`
+ ========================================================================== */
+.uk-navbar-flip {
+  float: right;
+}
+
+/* Modifier: `uk-nav-parent-icon`
+ ========================================================================== */
+.uk-nav-parent-icon > .uk-parent > a:after {
+  content: "\f104";
+  width: 20px;
+  margin-right: -10px;
+  float: right;
+  font-family: FontAwesome;
+  text-align: center;
+}
+.uk-nav-parent-icon > .uk-parent.uk-open > a:after {
+  content: "\f107";
+}
+
+/* ========================================================================
+   Component: Dropdown
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Box-sizing is needed for `uk-dropdown-justify`
+ * 4. Set style
+ * 5. Reset button group whitespace hack
+ */
+.uk-dropdown {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1020;
+  /* 3 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 4 */
+  width: 200px;
+  margin-top: 5px;
+  padding: 15px;
+  background: #ffffff;
+  color: #444444;
+  /* 5 */
+  font-size: 1rem;
+  vertical-align: top;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+/*
+ * 1. Show dropdown
+ * 2. Set animation
+ * 3. Needed for scale animation
+ */
+.uk-open > .uk-dropdown {
+  /* 1 */
+  display: block;
+  /* 2 */
+  -webkit-animation: uk-fade 0.2s ease-in-out;
+  animation: uk-fade 0.2s ease-in-out;
+  /* 3 */
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* Modifier: `uk-dropdown-navbar`
+ ========================================================================== */
+.uk-dropdown-navbar {
+  margin-top: 6px;
+  background: #ffffff;
+  color: #444444;
+  left: -1px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.uk-open > .uk-dropdown-navbar {
+  -webkit-animation: uk-slide-top-fixed 0.2s ease-in-out;
+  animation: uk-slide-top-fixed 0.2s ease-in-out;
+}
+
+/* ========================================================================
+   Component: Nav
+ ========================================================================== */
+.uk-nav,
+.uk-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Items
+ */
+.uk-nav li > a {
+  display: block;
+  text-decoration: none;
+}
+.uk-nav > li > a {
+  padding: 5px 15px;
+}
+/*
+ * Nested items
+ */
+.uk-nav ul {
+  padding-left: 15px;
+}
+.uk-nav ul a {
+  padding: 2px 0;
+}
+/*
+ * Item subtitle
+ */
+.uk-nav li > a > div {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Modifier `uk-nav-navbar`
+ ========================================================================== */
+/*
+ * Items
+ */
+.uk-nav-navbar > li > a {
+  color: #444444;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+.uk-nav-navbar > li > a:hover,
+.uk-nav-navbar > li > a:focus {
+  background: #00a8e6;
+  color: #ffffff;
+  /* 2 */
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+/*
+ * Sub-object: `uk-nav-header`
+ */
+.uk-nav-navbar .uk-nav-header {
+  color: #999999;
+}
+/*
+ * Sub-object: `uk-nav-divider`
+ */
+.uk-nav-navbar .uk-nav-divider {
+  border-top: 1px solid #dddddd;
+}
+/*
+ * Nested items
+ */
+.uk-nav-navbar ul a {
+  color: #0593d3;
+}
+.uk-nav-navbar ul a:hover {
+  color: #0477ab;
+}
+
+/* Nav in dropdown
+ ========================================================================== */
+.uk-dropdown .uk-nav {
+  margin: 0 -15px;
+}
+
+/*
+ * Nav in dropdown
+ */
+.uk-dropdown-small .uk-nav {
+  margin: 0 -5px;
+}
