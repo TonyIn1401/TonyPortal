@@ -87,40 +87,84 @@ var line_label = new Highcharts.Chart('line_label', {
         data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
     }]
 });
-var line_label = new Highcharts.Chart('line_label', {
-    chart: {
-        type: 'line'
-    },
-    credits: {
-        enabled: false // 禁用版权信息
-    },
-    title: {
-        text: '显示点值的折线图——月平均气温'
-    },
-    subtitle: {
-        text: '数据来源: WorldClimate.com'
-    },
-    xAxis: {
-        categories: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
-    },
-    yAxis: {
+$.getJSON('https://data.jianshukeji.com/jsonp?filename=json/usdeur.json&callback=?', function (data) {
+    $('#line_time-series').highcharts({
+        chart: {
+            zoomType: 'x'
+        },
+        credits: {
+            enabled: false // 禁用版权信息
+        },
         title: {
-            text: '气温 (°C)'
-        }
-    },
-    plotOptions: {
-        line: {
-            dataLabels: {
-                enabled: true          // 开启数据标签
-            },
-            enableMouseTracking: false // 关闭鼠标跟踪，对应的提示框、点击事件会失效
-        }
-    },
-    series: [{
-        name: '东京',
-        data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    }, {
-        name: '伦敦',
-        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-    }]
+            text: '可缩放时间轴-美元兑欧元汇率走势图'
+        },
+        subtitle: {
+            text: document.ontouchstart === undefined ?
+            '鼠标拖动可以进行缩放' : '手势操作进行缩放'
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                millisecond: '%H:%M:%S.%L',
+                second: '%H:%M:%S',
+                minute: '%H:%M',
+                hour: '%H:%M',
+                day: '%m-%d',
+                week: '%m-%d',
+                month: '%Y-%m',
+                year: '%Y'
+            }
+        },
+        tooltip: {
+            dateTimeLabelFormats: {
+                millisecond: '%H:%M:%S.%L',
+                second: '%H:%M:%S',
+                minute: '%H:%M',
+                hour: '%H:%M',
+                day: '%Y-%m-%d',
+                week: '%m-%d',
+                month: '%Y-%m',
+                year: '%Y'
+            }
+        },
+        yAxis: {
+            title: {
+                text: '汇率'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, Highcharts.getOptions().colors[0]],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                    ]
+                },
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
+            }
+        },
+        series: [{
+            type: 'area',
+            name: '美元兑欧元',
+            data: data
+        }]
+    });
 });

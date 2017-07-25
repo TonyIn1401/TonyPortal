@@ -102,11 +102,15 @@
     <Content Include="Css\uikit\sticky.css" />
     <Content Include="Css\uikit\sticky.min.css" />
     <Content Include="Css\uikit\uikit.almost-flat.css" />
+    <Content Include="HighCharts\HighCharts_AreaChart.aspx" />
+    <Content Include="HighCharts\HighCharts_BarChart.aspx" />
     <Content Include="HighCharts\HighCharts_LineChart.aspx" />
     <Content Include="Img\chartdemo-leida.png" />
     <Content Include="Img\chartdemo-linechart.png" />
     <Content Include="Img\chartdemo-map.png" />
     <Content Include="Img\chartdemo-relationchart.png" />
+    <Content Include="Js\highcharts\areacharts.js" />
+    <Content Include="Js\highcharts\barcharts.js" />
     <Content Include="Js\highcharts\linecharts.js" />
     <Content Include="Js\jquery.min.js" />
     <Content Include="Js\sticky.js" />
@@ -134,6 +138,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HighCharts\HighCharts_AreaChart.aspx.cs">
+      <DependentUpon>HighCharts_AreaChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_AreaChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_AreaChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_BarChart.aspx.cs">
+      <DependentUpon>HighCharts_BarChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_BarChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_BarChart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HighCharts\HighCharts_LineChart.aspx.cs">
       <DependentUpon>HighCharts_LineChart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

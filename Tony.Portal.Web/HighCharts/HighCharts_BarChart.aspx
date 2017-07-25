@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Top.Master" AutoEventWireup="true" CodeBehind="HighCharts_LineChart.aspx.cs" Inherits="Tony.Portal.Web.HighCharts.HighCharts_LineChart" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Top.Master" AutoEventWireup="true" CodeBehind="HighCharts_BarChart.aspx.cs" Inherits="Tony.Portal.Web.HighCharts.HighCharts_BarChart" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headcontent" runat="server">
-    <title>HighChart_线图</title>
+    <title>HighChart_条形图和柱状图</title>
     <link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico" />
     <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
     <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
@@ -12,12 +12,12 @@
         <div class="uk-width-large-9-10 uk-width-medium-9-10 uk-width-small-1-1 uk-container-center">
             <div id="tony_block_article" class="uk-panel">
                 <div class="uk-flex uk-flex-column">
-                    <div id="line_basic" class="uk-panel uk-panel-box uk-margin-bottom"></div>
-                    <div id="line_label" class="uk-panel uk-panel-box uk-margin-bottom"></div>
-                    <div id="line_time-series" class="uk-panel uk-panel-box uk-margin-bottom"></div>
+                    <div id="bar_basic" class="uk-panel uk-panel-box uk-margin-bottom"></div>
+                    <div id="column_basic" class="uk-panel uk-panel-box uk-margin-bottom"></div>
+                    <div id="column_drilldown" class="uk-panel uk-panel-box uk-margin-bottom"></div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="/Js/highcharts/linecharts.js"></script>
+    <script src="/Js/highcharts/barcharts.js"></script>
 </asp:Content>
