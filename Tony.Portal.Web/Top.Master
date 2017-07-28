@@ -31,10 +31,10 @@
                                     <li><a href="http://localhost:53434/HighCharts/HighCharts_LineChart.aspx">线图</a></li>
                                     <li><a href="http://localhost:53434/HighCharts/HighCharts_AreaChart.aspx">面积图</a></li>
                                     <li><a href="http://localhost:53434/HighCharts/HighCharts_BarChart.aspx">柱状图/条形图</a></li>
-                                    <li><a href="http://www.baidu.com">饼状图</a></li>
-                                    <li><a href="http://www.baidu.com">散点图及气泡图</a></li>
-                                    <li><a href="http://www.baidu.com">仪表图</a></li>
-                                    <li><a href="http://www.baidu.com">热力图</a></li>
+                                    <li><a href="http://localhost:53434/HighCharts/HighCharts_PieChart.aspx">饼状图</a></li>
+                                    <li><a href="http://localhost:53434/HighCharts/HighCharts_SbChart.aspx">散点图及气泡图</a></li>
+                                    <li><a href="http://localhost:53434/HighCharts/HighCharts_GaugeChart.aspx">仪表图</a></li>
+                                    <li><a href="http://localhost:53434/HighCharts/HighCharts_HeatMapChart.aspx">热力图</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -82,10 +82,10 @@
                     <li><a href="http://localhost:53434/HighCharts/HighCharts_LineChart.aspx">线图</a></li>
                     <li><a href="http://localhost:53434/HighCharts/HighCharts_AreaChart.aspx">面积图</a></li>
                     <li><a href="http://localhost:53434/HighCharts/HighCharts_BarChart.aspx">柱状图/条形图</a></li>
-                    <li><a href="http://www.baidu.com">饼状图</a></li>
-                    <li><a href="http://www.baidu.com">散点图及气泡图</a></li>
-                    <li><a href="http://www.baidu.com">仪表图</a></li>
-                    <li><a href="http://www.baidu.com">热力图</a></li>
+                    <li><a href="http://localhost:53434/HighCharts/HighCharts_PieChart.aspx">饼状图</a></li>
+                    <li><a href="http://localhost:53434/HighCharts/HighCharts_SbChart.aspx">散点图及气泡图</a></li>
+                    <li><a href="http://localhost:53434/HighCharts/HighCharts_GaugeChart.aspx">仪表图</a></li>
+                    <li><a href="http://localhost:53434/HighCharts/HighCharts_HeatMapChart.aspx">热力图</a></li>
                 </ul>
             </div>
 

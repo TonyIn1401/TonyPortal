@@ -104,14 +104,22 @@
     <Content Include="Css\uikit\uikit.almost-flat.css" />
     <Content Include="HighCharts\HighCharts_AreaChart.aspx" />
     <Content Include="HighCharts\HighCharts_BarChart.aspx" />
+    <Content Include="HighCharts\HighCharts_GaugeChart.aspx" />
+    <Content Include="HighCharts\HighCharts_HeatMapChart.aspx" />
     <Content Include="HighCharts\HighCharts_LineChart.aspx" />
+    <Content Include="HighCharts\HighCharts_PieChart.aspx" />
+    <Content Include="HighCharts\HighCharts_SbChart.aspx" />
     <Content Include="Img\chartdemo-leida.png" />
     <Content Include="Img\chartdemo-linechart.png" />
     <Content Include="Img\chartdemo-map.png" />
     <Content Include="Img\chartdemo-relationchart.png" />
     <Content Include="Js\highcharts\areacharts.js" />
     <Content Include="Js\highcharts\barcharts.js" />
+    <Content Include="Js\highcharts\gaugecharts.js" />
+    <Content Include="Js\highcharts\heatmapcharts.js" />
     <Content Include="Js\highcharts\linecharts.js" />
+    <Content Include="Js\highcharts\piecharts.js" />
+    <Content Include="Js\highcharts\sbcharts.js" />
     <Content Include="Js\jquery.min.js" />
     <Content Include="Js\sticky.js" />
     <Content Include="Js\sticky.min.js" />
@@ -152,12 +160,40 @@
     <Compile Include="HighCharts\HighCharts_BarChart.aspx.designer.cs">
       <DependentUpon>HighCharts_BarChart.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HighCharts\HighCharts_GaugeChart.aspx.cs">
+      <DependentUpon>HighCharts_GaugeChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_GaugeChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_GaugeChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_HeatMapChart.aspx.cs">
+      <DependentUpon>HighCharts_HeatMapChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_HeatMapChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_HeatMapChart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HighCharts\HighCharts_LineChart.aspx.cs">
       <DependentUpon>HighCharts_LineChart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HighCharts\HighCharts_LineChart.aspx.designer.cs">
       <DependentUpon>HighCharts_LineChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_PieChart.aspx.cs">
+      <DependentUpon>HighCharts_PieChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_PieChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_PieChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_SbChart.aspx.cs">
+      <DependentUpon>HighCharts_SbChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HighCharts\HighCharts_SbChart.aspx.designer.cs">
+      <DependentUpon>HighCharts_SbChart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

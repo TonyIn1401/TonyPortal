@@ -381,7 +381,4 @@
             }]
         }
     });
-    Highcharts.chart('container', {
-        
-    });
 });
